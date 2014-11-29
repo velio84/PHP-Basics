@@ -1,0 +1,35 @@
+#wrapper {
+	width: 300px;
+	margin: 50pt auto;
+	box-sizing: border-box;
+}
+
+#wrapper table {
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+	border-top: 1px solid black;
+	border-spacing: 0;
+}
+
+#wrapper table tr {
+	
+}
+
+#wrapper table tr td:nth-child(1) {
+	background-color: tomato;
+	padding: 10px 30px 10px 10px;
+	font-family: sans-serif;
+	font-weight: bold;
+	border-right: 1px solid black;
+	border-bottom: 1px solid black;
+}
+
+#wrapper table tr td:nth-child(2) {
+	padding: 10px 5px;
+	font-family: sans-serif;
+	font-style: italic;
+	font-size: 11pt;
+	text-align: right;
+	background-color: #6DDAEC;
+	border-bottom: 1px solid black;
+}
