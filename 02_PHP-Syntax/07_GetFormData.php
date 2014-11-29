@@ -24,11 +24,11 @@
 </body>
 
 <?php if(isset($_GET["name"])):
-    $name = htmlspecialchars($_GET["name"]);
-    $age = htmlspecialchars($_GET["age"]);
-    $gender = htmlspecialchars($_GET["gender"]);
+    $name = $_GET["name"];
+    $age = $_GET["age"];
+    $gender = $_GET["gender"];
 ?>
 
-    <p>My name is <?= $name ?>. I am <?= $age ?> years old. I am <?= $gender?>.</p>
+    <p>My name is <?= htmlspecialchars($name) ?>. I am <?= htmlspecialchars($age) ?> years old. I am <?= htmlspecialchars($gender)?>.</p>
     
 <?php endif; ?>
