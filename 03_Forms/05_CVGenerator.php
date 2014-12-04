@@ -186,7 +186,7 @@ validateInput();
                 <table border='2'>
                     <thead>
                         <th>Language</th>
-                        <th>Comprehesion</th>
+                        <th>Comprehension</th>
                         <th>Reading</th>
                         <th>Writing</th>
                     </thead>
