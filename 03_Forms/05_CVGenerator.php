@@ -21,16 +21,12 @@ function validateInput() {
         die ("Invalid Email");
     }
     
-    /*
-     * 
-    can't make this validation work -> the whole thing just stalls. If you can fix it, please let me know how  :)
-     * 
     foreach ($_POST['langLevels'] as $key => $value) {
         if(!preg_match($nameAndLangRegEx, $value)) {
-        die ("Invalid Language");
+            die ("Invalid Language");
+        }
     }
-     * 
-    */
+
 }
 validateInput();
 

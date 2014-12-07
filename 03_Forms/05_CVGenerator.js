@@ -23,7 +23,7 @@ function addLangItem() {
 	var lngEelement = document.createElement('div');
 	lngEelement.setAttribute('id', 'lng' + lngNextID);
 	lngEelement.innerHTML = 
-		"<input type='text' name=langLevels[] />" + 
+		"<input type='text' name='langLevels[]' />" + 
 		
 		"<select name='langComprehensions[]'><option selected disabled>-Comprehension-</option><option value='beginner'>Beginner</option>" + 
 		"<option value='intermediate'>Intermediate</option><option value='advanced'>Advanced</option></select>" +
