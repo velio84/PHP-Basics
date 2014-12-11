@@ -28,7 +28,7 @@
 	}
 	
 	if (isset($_GET['input'])):
-		$pattern = "/([^\.\!\?]+[\!\.\?]\s)/";
+		$pattern = "/([^\.\!\?]+[\!\.\?]\s*)/";
 		preg_match_all($pattern, $_GET['input'], $temp);
 		$arr = $temp[0];
 		
