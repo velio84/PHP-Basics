@@ -26,8 +26,9 @@
 			$output = preg_replace($patterns, $replacers, $text);
 			
 		?>
-		
-		<?= $output ?>
+		<br />
+		<br />
+		<?= htmlentities($output) ?>
 		
 		<?php
 		endif;
