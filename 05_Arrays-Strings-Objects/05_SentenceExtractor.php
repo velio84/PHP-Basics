@@ -17,7 +17,7 @@
 	<?php
 	function matchChecker($arr) {
 		$w = $_GET['word'];
-		$match = "/ ".$w."\s| ".$w."\.| ".$w."\!| ".$w."\?/";
+		$match = "/ ".$w."[\s\.\!\?]/i"; 
 		$matches = array();
 		foreach ($arr as $key => $value) {
 			if (preg_match($match, $value) == 1) {
@@ -28,7 +28,8 @@
 	}
 	
 	if (isset($_GET['input'])):
-		$pattern = "/([^\.\!\?]+\! )|([^\.\!\?]+\. )|([^\.\!\?]+\? )/";
+		$pattern = "/([^\.\!\?]+[\!\.\?]\s)/";
+		//$pattern = "/([^\.\!\?]+\! )|([^\.\!\?]+\. )|([^\.\!\?]+\? )/";
 		preg_match_all($pattern, $_GET['input'], $temp);
 		$arr = $temp[0];
 		
